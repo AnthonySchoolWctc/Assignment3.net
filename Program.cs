@@ -122,14 +122,28 @@ else
                 }
                 else
                 {
+                    //I am allowing these details to be null, as them being empty is ok in my book
+                    Console.WriteLine("Enter description of the character: ");
+                    string? desc = Console.ReadLine();
+
+                    Console.WriteLine("Enter character species: ");
+                    string? spec = Console.ReadLine();
+
+                    Console.WriteLine("Enter the media they first appeared in: ");
+                    string? fappear = Console.ReadLine();
+
+                    Console.WriteLine("Enter what year they got created: ");
+                    int? createdyear = Convert.ToInt32(Console.ReadLine());
 
 
 
 
-
-                    
                     //generate id as it isn't needed to be inputted
                     UInt64 id = ids.Max() + 1;
+                    
+
+
+
                 }
             }
             else
