@@ -118,7 +118,7 @@ else
                 List<string> lowerCaseNames = names.ConvertAll(n => n.ToLower());
                 if (lowerCaseNames.Contains(Name.ToLower()))
                 {
-                    //log message added later
+                    logger.Info($"Dupelicated name {Name}");
                 }
                 else
                 {
@@ -133,7 +133,7 @@ else
                     string? fappear = Console.ReadLine();
 
                     Console.WriteLine("Enter what year they got created: ");
-                    int? createdyear = Convert.ToInt32(Console.ReadLine());
+                    UInt64 createdyear = Convert.ToUInt64(Console.ReadLine());
 
 
 
@@ -141,14 +141,26 @@ else
                     //generate id as it isn't needed to be inputted
                     UInt64 id = ids.Max() + 1;
                     
+                    StreamWriter sw = new(file, true);
+                    sw.WriteLine($"{id},{Name},{desc},{spec},{fappear},{createdyear}");
+                    sw.Close();
+                    // add new character details to Lists
+                    ids.Add(id);
+                    names.Add(Name);
+                    descriptions.Add(desc);
+                    species.Add(spec);
+                    firstAppear.Add(fappear);
+                    yearCreated.Add(createdyear);
 
+                    // log transaction
+                    logger.Info($"Character id {id} added");
 
 
                 }
             }
             else
             {
-                //add error log later
+                logger.Error($"Cannont add a character with an empty name {Name}");
             }
         }
         else if (choice == "2")
