@@ -26,6 +26,27 @@ if (!File.Exists(file))
 }
 else
 {
-    // TODO: create user menu
+    // User menu: Same as from dk project as it I feel like something shouldn't try and be fixed if it aint broke
+    string? choice;
+    do
+    {
+        // adds if 1 selected, displays if 2 selected, logger keeps the choice in the log for debugging.
+        Console.WriteLine("1) Add Character");
+        Console.WriteLine("2) Display All Characters");
+        Console.WriteLine("Enter to quit");
+
+        // input selection
+        choice = Console.ReadLine();
+        logger.Info("User choice: {Choice}", choice);
+
+        if (choice == "1")
+        {
+            // Add Character
+        }
+        else if (choice == "2")
+        {
+            // Display All Characters
+        }
+    } while (choice == "1" || choice == "2");
 }
 logger.Info("Program ended");
