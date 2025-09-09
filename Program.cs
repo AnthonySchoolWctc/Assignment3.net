@@ -27,6 +27,11 @@ if (!File.Exists(file))
 else
 {
     // User menu: Same as from dk project as it I feel like something shouldn't try and be fixed if it aint broke
+        //right here I created the lists 
+
+
+
+
     string? choice;
     do
     {
