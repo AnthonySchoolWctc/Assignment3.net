@@ -1,5 +1,6 @@
 ﻿
 using NLog;
+using NLog.Targets;
 
 string path = Directory.GetCurrentDirectory() + "//nlog.config";
 
@@ -47,7 +48,28 @@ else
         {
             string? line = sr.ReadLine();
             Console.WriteLine(line);
-            
+
+            if (line is not null)
+            { //ensures the line has data
+
+
+                //details still seperated by commas so I split them 
+                string[] fileDetails = line.Split(',');
+
+                //id first
+                ids.Add(UInt64.Parse(fileDetails[0]));
+                //then name
+                names.Add(fileDetails[1]);
+                //then description
+                descriptions.Add(fileDetails[2]);
+                //then species
+                species.Add(fileDetails[3]);
+                //then first appearance
+                firstAppear.Add(fileDetails[4]);
+                //finally, the year created
+                yearCreated.Add(UInt64.Parse(fileDetails[5]));
+
+            }
         }
         sr.Close();
     }
