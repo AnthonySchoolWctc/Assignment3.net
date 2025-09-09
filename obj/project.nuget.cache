@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sDBmqtx4EIY=",
+  "dgSpecHash": "1+8Lw/5gwXM=",
   "success": true,
   "projectFilePath": "C:\\Users\\Adzikowski\\Documents\\Assignment3\\Assignment3.net\\Assignment3.net.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Adzikowski\\.nuget\\packages\\nlog\\5.3.3\\nlog.5.3.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,0 +1,4 @@
+2025-09-09 13:01:46.6289|INFO|Assignment3.net.Program|Sample informational message
+2025-09-09 13:01:46.6431|WARN|Assignment3.net.Program|Sample warning message
+2025-09-09 13:01:46.6431|ERROR|Assignment3.net.Program|Sample error message
+2025-09-09 13:01:46.6431|FATAL|Assignment3.net.Program|Sample fatal error message
