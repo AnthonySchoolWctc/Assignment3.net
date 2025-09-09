@@ -4,3 +4,9 @@
 2025-09-09 13:01:46.6431|FATAL|Assignment3.net.Program|Sample fatal error message
 2025-09-09 13:06:23.6563|INFO|Assignment3.net.Program|Program started
 2025-09-09 13:06:23.6851|INFO|Assignment3.net.Program|Program ended
+2025-09-09 13:37:56.8079|INFO|Assignment3.net.Program|Program started
+2025-09-09 13:37:56.8351|ERROR|Assignment3.net.Program|The process cannot access the file 'C:\Users\Adzikowski\Documents\Assignment3\Assignment3.net\mario.csv' because it is being used by another process.
+2025-09-09 13:38:08.1020|INFO|Assignment3.net.Program|User choice: ""
+2025-09-09 13:38:08.1020|INFO|Assignment3.net.Program|Program ended
+2025-09-09 13:38:12.4614|INFO|Assignment3.net.Program|Program started
+2025-09-09 13:38:51.9833|INFO|Assignment3.net.Program|User choice: "2"

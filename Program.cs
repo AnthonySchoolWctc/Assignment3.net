@@ -114,7 +114,18 @@ else
         }
         else if (choice == "2")
         {
-            // Display All Characters
+            // functionality should work, will see if i can create error exeptions later
+            for (int i = 0; i < ids.Count; i++)
+            {
+                // display character details
+                Console.WriteLine($"Id: {ids[i]}");
+                Console.WriteLine($"Name: {names[i]}");
+                Console.WriteLine($"Description: {descriptions[i]}");
+                Console.WriteLine($"Species: {species[i]}");
+                Console.WriteLine($"First Appearance: {firstAppear[i]}");
+                Console.WriteLine($"Year Created: {yearCreated[i]}");
+                Console.WriteLine();
+            }
         }
     } while (choice == "1" || choice == "2");
 }
