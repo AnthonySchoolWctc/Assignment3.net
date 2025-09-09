@@ -114,8 +114,23 @@ else
             string? Name = Console.ReadLine();
             if (!string.IsNullOrEmpty(Name))
             {
-                //generate id as it isn't needed to be inputted
-                UInt64 id = ids.Max() + 1;
+                //adding in duplication check first
+                List<string> lowerCaseNames = names.ConvertAll(n => n.ToLower());
+                if (lowerCaseNames.Contains(Name.ToLower()))
+                {
+                    //log message added later
+                }
+                else
+                {
+
+
+
+
+
+                    
+                    //generate id as it isn't needed to be inputted
+                    UInt64 id = ids.Max() + 1;
+                }
             }
             else
             {
