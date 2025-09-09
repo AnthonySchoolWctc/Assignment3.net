@@ -27,8 +27,13 @@ if (!File.Exists(file))
 else
 {
     // User menu: Same as from dk project as it I feel like something shouldn't try and be fixed if it aint broke
-        //right here I created the lists 
-
+    //right here I created the lists 
+    List<UInt64> ids = [];
+    List<string> names = [];
+    List<string> descriptions = [];
+    List<string> species = [];
+    List<string> firstAppear = [];
+    List<UInt64> yearCreated = [];
 
 
 
