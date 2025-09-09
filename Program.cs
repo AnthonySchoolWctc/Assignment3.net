@@ -34,6 +34,43 @@ else
     List<string> species = [];
     List<string> firstAppear = [];
     List<UInt64> yearCreated = [];
+    // now I populate them before the menu appears
+
+
+
+    try
+    {
+         StreamReader sr = new(file);
+        // first line is headers, so skip it with .readline()
+        sr.ReadLine();
+        while (!sr.EndOfStream)
+        {
+            string? line = sr.ReadLine();
+            Console.WriteLine(line);
+            
+        }
+        sr.Close();
+    }
+    catch (Exception ex)
+    {
+        logger.Error(ex.Message);
+    }
+    //This try should catch exceptions and input them to the logger
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
