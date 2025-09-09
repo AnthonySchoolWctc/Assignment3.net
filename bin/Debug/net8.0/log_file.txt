@@ -10,3 +10,12 @@
 2025-09-09 13:38:08.1020|INFO|Assignment3.net.Program|Program ended
 2025-09-09 13:38:12.4614|INFO|Assignment3.net.Program|Program started
 2025-09-09 13:38:51.9833|INFO|Assignment3.net.Program|User choice: "2"
+2025-09-09 13:45:10.6851|INFO|Assignment3.net.Program|User choice: ""
+2025-09-09 13:45:10.6851|INFO|Assignment3.net.Program|Program ended
+2025-09-09 13:45:15.5061|INFO|Assignment3.net.Program|Program started
+2025-09-09 13:45:16.1812|INFO|Assignment3.net.Program|User choice: ""
+2025-09-09 13:45:16.1868|INFO|Assignment3.net.Program|Program ended
+2025-09-09 13:45:24.8929|INFO|Assignment3.net.Program|Program started
+2025-09-09 13:45:26.3733|INFO|Assignment3.net.Program|User choice: "1"
+2025-09-09 13:45:34.0133|INFO|Assignment3.net.Program|User choice: ""
+2025-09-09 13:45:34.0133|INFO|Assignment3.net.Program|Program ended

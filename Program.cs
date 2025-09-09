@@ -95,7 +95,6 @@ else
 
 
 
-
     string? choice;
     do
     {
@@ -111,6 +110,17 @@ else
         if (choice == "1")
         {
             // Add Character
+            Console.WriteLine("Enter new character's name: ");
+            string? Name = Console.ReadLine();
+            if (!string.IsNullOrEmpty(Name))
+            {
+                //generate id as it isn't needed to be inputted
+                UInt64 id = ids.Max() + 1;
+            }
+            else
+            {
+                //add error log later
+            }
         }
         else if (choice == "2")
         {
